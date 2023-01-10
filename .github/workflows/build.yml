@@ -39,8 +39,10 @@ jobs:
       run: |
         cd bin
         mingw32-make -f Makefile
+        del cmake_install.cmake CMakeCache.txt libGalaxyWrp.dll.a MakeFile
+        rmdir /s /q CMakeFiles
     - name: Publish
       uses: actions/upload-artifact@v2.2.4
       with:
-        name: NoReg_Patch.zip
+        name: NoReg_Patch
         path: 'bin'
