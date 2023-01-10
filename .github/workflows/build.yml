@@ -4,9 +4,9 @@ name: Build
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "FalloutNV" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "FalloutNV" ]
 
 env:
   # Customize the CMake build type here (Release, Debug, RelWithDebInfo, etc.)
